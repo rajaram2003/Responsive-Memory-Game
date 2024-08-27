@@ -12,3 +12,9 @@ You can view a live demo of the game [here](https://rajaram2003.github.io/Respon
 - **Responsive Design**: Adapts to different screen sizes and devices.
 - **Animated Flip**: Smooth flip animations for card interactions.
 - **Score Tracking**: Keeps track of your score as you find matches.
+
+## Technologies Used
+
+- **HTML5 for structuring the game.
+- **CSS3 for styling and responsive design.
+- **JavaScript for game logic and interactions.
