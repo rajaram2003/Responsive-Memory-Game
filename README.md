@@ -4,7 +4,7 @@ A classic memory game where players match pairs of cards. The game is designed t
 
 ## Demo
 
-You can view a live demo of the game [here](#(https://rajaram2003.github.io/Responsive-Memory-Game/)). 
+You can view a live demo of the game [here](https://rajaram2003.github.io/Responsive-Memory-Game/). 
 
 ## Features
 
