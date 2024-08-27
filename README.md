@@ -15,6 +15,6 @@ You can view a live demo of the game [here](https://rajaram2003.github.io/Respon
 
 ## Technologies Used
 
-- **HTML5 for structuring the game.
-- **CSS3 for styling and responsive design.
-- **JavaScript for game logic and interactions.
+- HTML5 for structuring the game.
+- CSS3 for styling and responsive design.
+- JavaScript for game logic and interactions.
