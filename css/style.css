@@ -151,9 +151,9 @@ img {
   }
 
   .container {
-    grid-template-columns: repeat(3, 1fr); /* Ensure three columns */
+    grid-template-columns: repeat(3, 1fr); 
     gap: 0.5rem;
-    padding: 10px; /* Extra padding for better spacing */
+    padding: 10px; 
   }
 
   .cell div {
