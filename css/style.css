@@ -1,0 +1,171 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f0f0f5;
+}
+
+.head {
+  max-width: 480px;
+  border: 2px solid #5a5a5a;
+  margin: auto;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+  background-color: #e0e0eb;
+  font-family: "Orbitron", sans-serif;
+  color: #333;
+}
+
+.score {
+  margin-top: 10px;
+  font-size: 1.2em;
+}
+
+.container {
+  max-width: 960px;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 1rem;
+  margin: auto;
+  padding: 20px;
+}
+
+.cell div {
+  height: 130px;
+  border-radius: 8px;
+  transition: transform 0.6s;
+}
+
+.cell {
+  position: relative;
+  cursor: pointer;
+}
+
+/* flip animation */
+@keyframes flip {
+  0% {
+    transform: rotateY(90deg);
+  }
+  100% {
+    transform: rotateY(0deg);
+  }
+}
+
+.front.flip {
+  animation: flip 0.6s forwards; 
+}
+
+.front.match {
+  animation: flip 0.6s forwards; 
+}
+
+.front.show {
+  transform: rotateY(0deg);
+}
+
+.front {
+  transition: transform 0.6s;
+}
+
+.front {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #5a5a5a;
+  background-color: #f0f0f5;
+  border-radius: 8px; 
+  transform: rotateY(90deg);
+}
+
+.back {
+  background-color: #333;
+  border-radius: 8px;
+}
+
+img {
+  height: 100px;
+  width: 100px;
+}
+
+.flip {
+  transform: rotateY(0deg);
+}
+.match {
+  transform: rotateY(0deg);
+}
+
+.show {
+  transform: rotateY(0deg);
+}
+
+/* Responsive adjustments */
+@media screen and (min-width: 770px) {
+  .head {
+    max-width: 760px;
+  }
+
+  .container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .cell div {
+    height: 170px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .head {
+    max-width: 90%;
+    padding: 10px;
+  }
+
+  .container {
+    grid-template-columns: repeat(3, 1fr); /* Maintain three columns */
+    gap: 0.8rem;
+  }
+
+  .cell div {
+    height: 120px;
+  }
+
+  img {
+    height: 80px;
+    width: 80px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .head {
+    max-width: 100%;
+    padding: 10px;
+    height: auto;
+  }
+
+  .container {
+    grid-template-columns: repeat(3, 1fr); /* Ensure three columns */
+    gap: 0.5rem;
+    padding: 10px; /* Extra padding for better spacing */
+  }
+
+  .cell div {
+    height: 100px;
+  }
+
+  img {
+    height: 60px;
+    width: 60px;
+  }
+
+  .score {
+    font-size: 1em;
+  }
+}
